@@ -19,14 +19,27 @@
       text-align: center;
     }
 
+    h1, p {
+      margin: 0.5em 0;
+    }
+
     h1 {
       font-size: 2em;
-      margin-bottom: 0.5em;
     }
 
     p {
       font-size: 1em;
       margin-bottom: 2em;
+    }
+
+    .letter {
+      display: inline-block;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .letter:hover {
+      transform: translateY(-5px);
+      color: #d580ff; /* lighter purple */
     }
 
     .download-button {
@@ -49,10 +62,23 @@
 </head>
 <body>
 
-  <h1>FMA MENU</h1>
-  <p>The best menu on the market.</p>
+  <h1 id="title"></h1>
+  <p id="subtitle"></p>
   <a class="download-button" href="channels4_profile.jpg" download>Download</a>
+
+  <script>
+    const titleText = "FMA MENU";
+    const subtitleText = "The best menu on the market.";
+
+    function wrapLetters(text) {
+      return text.split('').map(char =>
+        `<span class="letter">${char === ' ' ? '&nbsp;' : char}</span>`
+      ).join('');
+    }
+
+    document.getElementById("title").innerHTML = wrapLetters(titleText);
+    document.getElementById("subtitle").innerHTML = wrapLetters(subtitleText);
+  </script>
 
 </body>
 </html>
-
