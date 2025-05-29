@@ -1,4 +1,4 @@
-// JS to add/remove light-up class on hover for each letter
+// Add hover effect that lights up each letter
 document.querySelectorAll('.letter').forEach(letter => {
   letter.addEventListener('mouseenter', () => {
     letter.classList.add('light-up');
