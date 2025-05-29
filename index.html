@@ -19,11 +19,6 @@
       align-items: center;
     }
 
-    .text-line {
-      margin: 10px 0;
-      font-size: 1em;
-    }
-
     .letter {
       display: inline-block;
       transition: transform 0.2s ease, color 0.2s ease;
@@ -51,30 +46,42 @@
     .download-button:hover {
       background-color: #a020f0;
     }
+
+    .text-line {
+      margin: 10px 0;
+    }
   </style>
 </head>
 <body>
 
-  <div class="text-line" id="title"></div>
-  <div class="text-line" id="subtitle"></div>
+  <div class="text-line">
+    <!-- FMA MENU manually wrapped -->
+    <span class="letter">F</span>
+    <span class="letter">M</span>
+    <span class="letter">A</span>
+    <span class="letter">&nbsp;</span>
+    <span class="letter">M</span>
+    <span class="letter">E</span>
+    <span class="letter">N</span>
+    <span class="letter">U</span>
+  </div>
+
+  <div class="text-line">
+    <!-- The best menu on the market. manually wrapped -->
+    <span class="letter">T</span><span class="letter">h</span><span class="letter">e</span>
+    <span class="letter">&nbsp;</span>
+    <span class="letter">b</span><span class="letter">e</span><span class="letter">s</span><span class="letter">t</span>
+    <span class="letter">&nbsp;</span>
+    <span class="letter">m</span><span class="letter">e</span><span class="letter">n</span><span class="letter">u</span>
+    <span class="letter">&nbsp;</span>
+    <span class="letter">o</span><span class="letter">n</span>
+    <span class="letter">&nbsp;</span>
+    <span class="letter">t</span><span class="letter">h</span><span class="letter">e</span>
+    <span class="letter">&nbsp;</span>
+    <span class="letter">m</span><span class="letter">a</span><span class="letter">r</span><span class="letter">k</span><span class="letter">e</span><span class="letter">t</span><span class="letter">.</span>
+  </div>
 
   <a class="download-button" href="channels4_profile.jpg" download>Download</a>
 
-  <script>
-    const titleText = "FMA MENU";
-    const subtitleText = "The best menu on the market.";
-
-    function wrapLetters(text) {
-      return text.split('').map(char => {
-        if (char === ' ') return '&nbsp;';
-        return `<span class="letter">${char}</span>`;
-      }).join('');
-    }
-
-    document.getElementById("title").innerHTML = wrapLetters(titleText);
-    document.getElementById("subtitle").innerHTML = wrapLetters(subtitleText);
-  </script>
-
 </body>
 </html>
-
