@@ -1,48 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>FMA MENU</title>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      font-family: 'Press Start 2P', sans-serif;
+    body {
       background-color: #000;
+      font-family: 'Press Start 2P', sans-serif;
       color: purple;
-      text-align: center;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
     }
 
     .letter {
       display: inline-block;
-      padding: 0.2em 0.4em;
-      border-radius: 4px;
-      transition: background-color 0.3s ease, color 0.3s ease;
+      transition: color 0.3s ease;
     }
 
     .letter:hover {
-      background-color: #a020f0;
-      color: black;
+      color: #a020f0; /* Same as the button hover */
     }
 
     .download-button {
+      margin-top: 30px;
       padding: 1em 2em;
-      font-size: 1em;
       background-color: purple;
       color: black;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
       text-decoration: none;
+      border-radius: 8px;
       font-weight: bold;
       transition: background-color 0.3s ease;
-      margin-top: 30px;
     }
 
     .download-button:hover {
@@ -57,7 +50,7 @@
 <body>
 
   <div class="text-line">
-    <!-- FMA MENU manually wrapped -->
+    <!-- F M A   M E N U -->
     <span class="letter">F</span>
     <span class="letter">M</span>
     <span class="letter">A</span>
@@ -69,7 +62,7 @@
   </div>
 
   <div class="text-line">
-    <!-- The best menu on the market. manually wrapped -->
+    <!-- The best menu on the market. -->
     <span class="letter">T</span><span class="letter">h</span><span class="letter">e</span>
     <span class="letter">&nbsp;</span>
     <span class="letter">b</span><span class="letter">e</span><span class="letter">s</span><span class="letter">t</span>
@@ -83,8 +76,7 @@
     <span class="letter">m</span><span class="letter">a</span><span class="letter">r</span><span class="letter">k</span><span class="letter">e</span><span class="letter">t</span><span class="letter">.</span>
   </div>
 
-  <a class="download-button" href="channels4_profile.jpg" download>Download</a>
+  <a class="download-button" href="FMAInstaller.zip" download>Download</a>
 
 </body>
 </html>
-
